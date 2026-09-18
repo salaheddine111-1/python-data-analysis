@@ -21,7 +21,7 @@ Welcome to my Python Data Analysis portfolio repository! This project demonstrat
 ## 🚀 How to Run
 ```bash
 # Clone this repository
-git clone [https://github.com/salaheddine111-1/python-data-analysis.git](https://github.com/salaheddine111-1/python-data-analysis.git)
-
+git clone https://github.com/salaheddine111-1/python-data-analysis.git
 # Run the analysis script
 python main.py
+```
