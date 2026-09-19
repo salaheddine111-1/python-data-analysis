@@ -1,18 +1,24 @@
-# Import necessary libraries for data analysis
 import pandas as pd
 import numpy as np
 
-def load_data(file_path):
+def analyze_sales_data(file_path):
     """
-    Function to load dataset using Pandas
+    Load customer sales data and print summary statistics
     """
     try:
         df = pd.read_csv(file_path)
-        print("Data loaded successfully!")
-        return df
+        print("--- Dataset Info ---")
+        print(df.head(), "\n")
+        
+        total_sales = df['Amount'].sum()
+        avg_rating = df['Rating'].mean()
+        
+        print(f"Total Sales Amount: ${total_sales:.2f}")
+        print(f"Average Customer Rating: {avg_rating:.2f} / 5.0")
+        
     except FileNotFoundError:
-        print(f"File not found at {file_path}")
-        return None
+        print(f"Error: The file {file_path} was not found.")
 
 if __name__ == "__main__":
-    print("Python Data Analysis environment is ready.")
+    print("Running Customer Sales Analysis...\n")
+    analyze_sales_data("data/customer_sales.csv")
