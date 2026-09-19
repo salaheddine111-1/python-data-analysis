@@ -1,18 +1,18 @@
+# Import necessary libraries for data analysis
 import pandas as pd
+import numpy as np
 
-# Create a simple dataset
-data = {
-    'Category': ['Electronics', 'Clothing', 'Books', 'Electronics', 'Clothing'],
-    'Sales': [1200, 450, 200, 1500, 600],
-    'Quantity': [4, 10, 5, 5, 12]
-}
+def load_data(file_path):
+    """
+    Function to load dataset using Pandas
+    """
+    try:
+        df = pd.read_csv(file_path)
+        print("Data loaded successfully!")
+        return df
+    except FileNotFoundError:
+        print(f"File not found at {file_path}")
+        return None
 
-df = pd.DataFrame(data)
-
-# Display basic stats
-print("--- Dataset Overview ---")
-print(df.head())
-
-print("\n--- Total Sales by Category ---")
-category_sales = df.groupby('Category')['Sales'].sum()
-print(category_sales)
+if __name__ == "__main__":
+    print("Python Data Analysis environment is ready.")
