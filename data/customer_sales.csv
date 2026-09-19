@@ -1,0 +1,11 @@
+CustomerID,Category,Amount,PurchaseDate,Rating
+101,Electronics,250.50,2026-01-10,5
+102,Clothing,45.00,2026-01-12,4
+103,Home & Kitchen,120.00,2026-01-15,3
+101,Electronics,89.99,2026-01-20,5
+104,Clothing,65.50,2026-01-22,4
+105,Home & Kitchen,210.00,2026-01-25,5
+102,Electronics,450.00,2026-02-01,4
+103,Clothing,35.00,2026-02-05,2
+104,Electronics,199.99,2026-02-10,5
+105,Home & Kitchen,150.00,2026-02-14,4
